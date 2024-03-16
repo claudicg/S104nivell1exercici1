@@ -3,10 +3,10 @@ package n1exercici1.handlers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Demostrar {
+public class MonthsList {
 	 
 	
-	public List<String> afegirMonths() {
+	private List<String> afegirMonths() {
 		
 		List<String> months = new ArrayList<>();
 		
@@ -26,17 +26,10 @@ public class Demostrar {
 		return months;
 	}
 	
-	public void demostrarInsercionMeses() {
+	public List<String> retornarLlistaMonths() {
 		
 		List<String> months = afegirMonths();
-		escriureMonths(months);
-	}
-	
-	private void escriureMonths(List<String> months) {
-		
-		for(String month : months) {
-			System.out.print(month + " ");
-		}
+		return months;
 	}
 	
 }
